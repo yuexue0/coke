@@ -1,0 +1,19 @@
+spring.profiles.active: @activatedProperties@
+spring.aop.proxy-target-class: true
+logging.config: classpath:log4j2.xml
+
+#日志配置
+logging:
+  level:
+    org.springframework.cloud.gateway: TRACE
+    org.springframework.http.server.reactive: DEBUG
+    org.springframework.web.reactive: DEBUG
+    reactor.ipc.netty: DEBUG
+
+eureka:
+  client:
+    enabled: false
+
+spring:
+  application:
+    name: COKE-SERVICE
